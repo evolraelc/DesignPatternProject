@@ -17,7 +17,7 @@ public class Manager extends Employee {
     }
 
     @Override
-    public void getMessage() {
+    public void getMessage(String msg) {
 
     }
 
@@ -25,4 +25,11 @@ public class Manager extends Employee {
     public void sendMessage() {
 
     }
+
+    @Override
+    protected void notifyChannel(BroadcastType broadcastType, String operation) {
+
+    }
+
+
 }

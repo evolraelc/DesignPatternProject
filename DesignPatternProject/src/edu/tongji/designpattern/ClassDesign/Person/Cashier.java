@@ -18,7 +18,7 @@ public class Cashier extends Employee {
     }
 
     @Override
-    public void getMessage() {
+    public void getMessage(String msg) {
 
     }
 
@@ -26,4 +26,10 @@ public class Cashier extends Employee {
     public void sendMessage() {
 
     }
+
+    @Override
+    public void notifyChannel(BroadcastType broadcastType, String operation) {
+
+    }
+
 }
