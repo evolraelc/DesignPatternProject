@@ -2,12 +2,18 @@ package edu.tongji.designpattern;
 import edu.tongji.designpattern.ClassDesign.*;
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.FloorAirConditioner;
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.HangingAirConditioner;
+import edu.tongji.designpattern.ClassDesign.Business.Builder.ComboBuilder;
+import edu.tongji.designpattern.ClassDesign.Business.Builder.ConcreteComboBuilderA;
+import edu.tongji.designpattern.ClassDesign.Business.Builder.ConcreteComboBuilderB;
+import edu.tongji.designpattern.ClassDesign.Business.Builder.Director;
 import edu.tongji.designpattern.ClassDesign.Business.MenuSource.MenuSource;
 import edu.tongji.designpattern.ClassDesign.Business.MenuSource.ProxyMenuSource;
 import edu.tongji.designpattern.ClassDesign.Person.Customer;
 import edu.tongji.designpattern.ClassDesign.Person.Employee;
 import edu.tongji.designpattern.ClassDesign.Person.Manager;
 import edu.tongji.designpattern.ClassDesign.Person.Waiter;
+import edu.tongji.designpattern.ClassDesign.Tools.Combo;
+import javafx.scene.control.cell.ComboBoxTableCellBuilder;
 
 public class Main {
 
@@ -67,6 +73,19 @@ public class Main {
         System.out.println(" ");
         //资源文件不需要从磁盘加载
         source.show();
+
+
+//test for BuilderPattern
+        ComboBuilder comboBuilder1= new ConcreteComboBuilderA();
+        ComboBuilder comboBuilder2= new ConcreteComboBuilderB();
+        Director director1 =new Director(comboBuilder1);
+        Director director2 =new Director(comboBuilder2);
+        Combo comboA=director1.construct();
+        Combo comboB=director2.construct();
+
+
+
+
 
     }
 }
