@@ -67,6 +67,8 @@ public class Main {
         System.out.println(" ");
         //资源文件不需要从磁盘加载
         source.show();
+//asxghasjkahxask        
+
 
     }
 }
