@@ -5,11 +5,6 @@ import edu.tongji.designpattern.ClassDesign.Tools.InterPhoneChannel;
 import edu.tongji.designpattern.ClassDesign.Order.Order;
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.AirConditionerAPI;
 
-enum Gender{
-    MALE, FEMALE
-}
-
-
 
 public abstract class Employee {
     protected OrderAggregate order;
@@ -21,15 +16,16 @@ public abstract class Employee {
     public InterPhoneChannel myInterphoneChannel;
 
 
-    ////>>>>
-    public Employee(String employeeID){
-        this.employeeID = employeeID;
-    }
+//    ////>>>>
+//    public Employee(String employeeID){
+//        this.employeeID = employeeID;
+//    }
 
 
     protected AirConditionerAPI airConditionerAPI;
 
-    public Employee(AirConditionerAPI airConditionerAPI){
+    public Employee(String employeeID,AirConditionerAPI airConditionerAPI){
+        this.employeeID = employeeID;
         this.airConditionerAPI= airConditionerAPI;
     }
 

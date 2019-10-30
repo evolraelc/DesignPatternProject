@@ -13,6 +13,8 @@ public class Waiter extends Employee {
 
     Customer customer;
     private double temperature;
+    private Order currentOrder = null;
+    private OrderRecordingStrategy strategy = null;
 
 
     public Waiter(String employeeID,double temperature,AirConditionerAPI airConditionerAPI) {

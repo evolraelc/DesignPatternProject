@@ -15,7 +15,7 @@ public class VIPCustomerCriteria extends CustomerCriteria {
     @Override
     public boolean isMetCriteria(Customer customer) {
         this.meetCriteria();
-        for (var item: this.customerList){
+        for (Customer item: this.customerList){
             if (item == customer)
                 return true;
         }

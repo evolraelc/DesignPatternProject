@@ -47,7 +47,7 @@ public class Order extends AbstractAggregate<Dish> {
         remove dish by dishID
      */
     public boolean removeDish(String dishID){
-        for (var dsh:dishes){
+        for (Dish dsh:dishes){
             if (dishID == dsh.getDishID()){
                 return dishes.remove(dsh);
             }

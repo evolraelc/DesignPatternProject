@@ -1,7 +1,6 @@
 package edu.tongji.designpattern.ClassDesign.Person;
 
 import edu.tongji.designpattern.ClassDesign.Business.Command.*;
-import edu.tongji.designpattern.ClassDesign.Order.Order;
 import edu.tongji.designpattern.ClassDesign.Tools.Dish;
 import edu.tongji.designpattern.ClassDesign.Business.State.CustomerState;
 import edu.tongji.designpattern.ClassDesign.Business.State.OrderState;
@@ -9,15 +8,11 @@ import edu.tongji.designpattern.ClassDesign.Business.State.OrderState;
 import java.util.ArrayList;
 import java.util.List;
 
-enum VIPType{
-    VIP,NONVIP
-}
-
 public class Customer {
     ////<<<<
     private String customerName;
     private Gender customerGender;
-    private int customerAge = 0;
+//    private int customerAge = 0;
     private VIPType viptype = VIPType.NONVIP;
 
     ////>>>>>>>>
@@ -34,11 +29,11 @@ public class Customer {
     }
 
     ////>>>>
-    public Customer(String name, String gender,Integer VIPORNOT){
-        this.name=name;
-        this.gender=gender;
-        this.VIPORNOT=VIPORNOT;
-        customers=new ArrayList<Customer>();
+    public Customer(String name, Gender gender,VIPType VIPORNOT){
+        this.customerName = name;
+        this.customerGender = gender;
+        this.viptype = VIPORNOT;
+        customers = new ArrayList<Customer>();
     }
     public Customer(){
         //初始化为点单状态
@@ -126,6 +121,8 @@ public class Customer {
         return customers;
     }
     public String toString(){
-        return ("顾客：[姓名："+name+"，性别："+gender+", 是否为VIP客户"+VIPORNOT+"]");
+        return ("顾客：[姓名："+this.customerName
+                +"，性别："+this.customerGender+", 是否为VIP客户"
+                +this.viptype+"]");
     }
 }
