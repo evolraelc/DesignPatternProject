@@ -1,5 +1,6 @@
 package edu.tongji.designpattern.ClassDesign.Person;
 
+import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.AirConditionerAPI;
 import edu.tongji.designpattern.ClassDesign.Business.OrderRecording.AddDishStrategy;
 import edu.tongji.designpattern.ClassDesign.Business.OrderRecording.OrderConfirmStrategy;
 import edu.tongji.designpattern.ClassDesign.Business.OrderRecording.OrderCreateStrategy;
@@ -7,19 +8,27 @@ import edu.tongji.designpattern.ClassDesign.Business.OrderRecording.*;
 import edu.tongji.designpattern.ClassDesign.Order.Order;
 import edu.tongji.designpattern.ClassDesign.Tools.Dish;
 
+////>>>>
 public class Waiter extends Employee {
 
-    private OrderRecordingStrategy strategy = null;
-    private Order currentOrder = null;
+    Customer customer;
+    private double temperature;
 
-    public Waiter(String employeeID){
-        super(employeeID);
+
+    public Waiter(String employeeID,double temperature,AirConditionerAPI airConditionerAPI) {
+        super(employeeID,airConditionerAPI);
+        this.temperature= temperature;
         this.employeeTitle = EmployeeTitle.WAITER;
+    }
+
+    public void getState(Customer customer){
+        System.out.println("顾客现在的状态是：");
     }
 
     @Override
     public void changeTmp() {
-
+        System.out.println("服务员修改空调温度——");
+        airConditionerAPI.changeTem(temperature);
     }
 
     @Override
