@@ -2,6 +2,10 @@ package edu.tongji.designpattern.ClassDesign.Person;
 
 public class Cashier extends Employee {
 
+    public Cashier(String employeeID) {
+        super(employeeID);
+    }
+
     @Override
     public void changeTmp() {
 

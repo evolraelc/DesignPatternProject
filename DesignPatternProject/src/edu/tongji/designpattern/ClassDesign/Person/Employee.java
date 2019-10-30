@@ -20,8 +20,8 @@ public abstract class Employee {
     public InterPhoneChannel myInterphoneChannel;
 
 
-    public Employee(){
-
+    public Employee(String employeeID){
+        this.employeeID = employeeID;
     }
 
     public abstract void changeTmp();
@@ -29,7 +29,9 @@ public abstract class Employee {
     public abstract void settleComplaint();
 
     //// process the massage received
-    public abstract void getMessage(String msg);
+    public void getMessage(String msg){
+        System.out.println(this.employeeID+" receive message "+msg);
+    }
 
     public abstract void sendMessage();
 

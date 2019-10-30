@@ -17,6 +17,10 @@ public class Customer {
     private OrderPadCommand myCommand;
     private Waiter servedWaiter;
 
+    public Customer(String name){
+        this.customerName = name;
+    }
+
     public void served(Waiter wt){
         this.servedWaiter = wt;
     }

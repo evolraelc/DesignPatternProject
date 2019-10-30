@@ -12,7 +12,8 @@ public class Waiter extends Employee {
     private OrderRecordingStrategy strategy = null;
     private Order currentOrder = null;
 
-    public Waiter(){
+    public Waiter(String employeeID){
+        super(employeeID);
         this.employeeTitle = EmployeeTitle.WAITER;
     }
 
@@ -33,7 +34,7 @@ public class Waiter extends Employee {
 
     @Override
     public void getMessage(String msg) {
-
+        System.out.println(this.employeeID+" receive "+msg);
     }
 
     @Override

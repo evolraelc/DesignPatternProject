@@ -1,32 +1,32 @@
 package edu.tongji.designpattern;
 
-import edu.tongji.designpattern.ClassDesign.Person.Cook;
 
-import java.io.Console;
+import edu.tongji.designpattern.ClassDesign.Person.Employee;
+import edu.tongji.designpattern.ClassDesign.Person.Manager;
+import edu.tongji.designpattern.ClassDesign.Person.Waiter;
+import edu.tongji.designpattern.ClassDesign.Tools.InterPhoneChannel;
+
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
 
-    public class data{
-
-    }
-    public class A{
-        public data d = new data();
-    }
-    public class B{
-        public data d = null;
-        public B(data d){
-            this.d = d;
-        }
-    }
     public static void main(String[] args) {
         System.out.println("hello world");
-        Cook c = new Cook();
-        Main m = new Main();
 
-        List<A> ls;
-        
+        ArrayList<Employee> arr = new ArrayList<>();
+        Manager manager = new Manager("manager");
+        arr.add(manager);
+        Waiter wt1 = new Waiter("waiter 1");
+        Waiter wt2 = new Waiter("waiter 2");
+        arr.add(wt1);
+        arr.add(wt2);
+
+        InterPhoneChannel phone = InterPhoneChannel.getInstance(arr);
+
+        var res = manager.notifyWaitersToService();
+        System.out.println(res);
+
 
     }
 }

@@ -1,6 +1,10 @@
 package edu.tongji.designpattern.ClassDesign.Person;
 
 public class Manager extends Employee {
+    public Manager(String employeeID) {
+        super(employeeID);
+    }
+
     @Override
     public void changeTmp() {
 
@@ -24,6 +28,14 @@ public class Manager extends Employee {
     @Override
     public void sendMessage() {
 
+    }
+
+    public boolean notifyWaitersToService(){
+        if (this.myInterphoneChannel == null)
+            return false;
+        return this.myInterphoneChannel.notify(this,
+                    "new service",
+                    BroadcastType.ALL_EMPLOYEE);
     }
 
     @Override

@@ -9,7 +9,7 @@ import java.util.List;
 public class InterPhoneChannel {
     private Boolean status = false;
     private List<? extends Employee> onlineEmployees = new ArrayList<Employee>();
-    public InterPhoneChannel instance = null;
+    public static InterPhoneChannel instance = null;
 
     /*
         singleton
@@ -30,7 +30,9 @@ public class InterPhoneChannel {
         }
         this.status = true;
     }
-    public InterPhoneChannel getInstance(List<? extends Employee> eArray){
+
+
+    public static InterPhoneChannel getInstance(List<? extends Employee> eArray){
         if (instance == null){
             instance = new InterPhoneChannel(eArray);
         }
