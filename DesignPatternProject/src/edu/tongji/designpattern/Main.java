@@ -15,6 +15,16 @@ import edu.tongji.designpattern.ClassDesign.Tools.Combo;
 
 public class Main {
 
+    //// 合并的时候这里写单元测试，加上自己的函数
+    public class Debug{
+        public void eyishengTest1(){
+            System.out.println("hello world");
+        }
+    }
+
+    /*
+        我定义了一些 Enum type，修改了你们的参数，但是输出时没有改
+     */
     public static void main(String[] args) {
 
 
@@ -80,9 +90,6 @@ public class Main {
         Director director2 =new Director(comboBuilder2);
         Combo comboA=director1.construct();
         Combo comboB=director2.construct();
-
-
-
 
 
         ////<<<< eatamath debug
