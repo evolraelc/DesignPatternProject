@@ -11,12 +11,6 @@ public class Manager extends Employee {
         this.temperature=temperature;
     }
 
-    //private static Manager instance = new Manager();
-
-    //public static Manager getInstance() {
-//        return instance;
-//    }
-
     //解决顾客投诉的方法
     @Override
     public void settleComplaint(){
@@ -25,7 +19,6 @@ public class Manager extends Employee {
         System.out.println("您好，我们会为您的本次就餐提供A类优惠卷，在结账时会提供6.8折优惠。");
         System.out.println("非常抱歉，同时祝您就餐愉快！");
     }
-
 
 
     @Override
@@ -41,7 +34,7 @@ public class Manager extends Employee {
 
 
     @Override
-    public void getMessage() {
+    public void getMessage(String msg) {
 
     }
 
@@ -49,4 +42,19 @@ public class Manager extends Employee {
     public void sendMessage() {
 
     }
+
+    public boolean notifyWaitersToService(){
+        if (this.myInterphoneChannel == null)
+            return false;
+        return this.myInterphoneChannel.notify(this,
+                    "new service",
+                    BroadcastType.ALL_EMPLOYEE);
+    }
+
+    @Override
+    protected void notifyChannel(BroadcastType broadcastType, String operation) {
+
+    }
+
+
 }

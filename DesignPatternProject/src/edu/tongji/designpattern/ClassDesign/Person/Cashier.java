@@ -10,12 +10,11 @@ public class Cashier extends Employee {
 
     private double temperature;
 
-
     Order order;
     String couponType;
     RealDiscount realDiscount;
 
-    public Cashier(double temperature,AirConditionerAPI airConditionerAPI, Order order, String couponType) {
+    public Cashier(double temperature,AirConditionerAPI airConditionerAPI,  String couponType) {
         super(airConditionerAPI);
         this.temperature=temperature;
 
@@ -23,12 +22,6 @@ public class Cashier extends Employee {
         this.couponType = couponType;
         realDiscount = new RealDiscount(couponType);
     }
-
-//    public Cashier(Order order, String couponType){
-//        this.order = order;
-//        this.couponType = couponType;
-//        realDiscount = new RealDiscount(couponType);
-//    }
 
     public void settleAccount(){
         //这里执行结账操作，结账成功返回true
@@ -58,7 +51,7 @@ public class Cashier extends Employee {
     }
 
     @Override
-    public void getMessage() {
+    public void getMessage(String msg) {
 
     }
 
@@ -66,4 +59,10 @@ public class Cashier extends Employee {
     public void sendMessage() {
 
     }
+
+    @Override
+    public void notifyChannel(BroadcastType broadcastType, String operation) {
+
+    }
+
 }
