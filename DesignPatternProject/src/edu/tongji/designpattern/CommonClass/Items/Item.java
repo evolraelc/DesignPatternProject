@@ -1,11 +1,7 @@
-package edu.tongji.designpattern.CommonClass.Items;/*
- * created by zhujitao
- * 2019/10/25
- * 代替food的item
- * */
+package edu.tongji.designpattern.CommonClass.Items;
 
 public class Item {
-
+    private String dishID;
     private String name;
     private double price;
 
@@ -33,4 +29,22 @@ public class Item {
         this.name = name;
     }
 
+    public String getDishID(){return this.dishID;}
+
+//    private String name;
+//    private Integer price;
+//    private String category;
+//
+//
+//    public void setName(String name){
+//        this.name=name;
+//    }
+//
+//    public void setPrice(Integer price) {
+//        this.price = price;
+//    }
+//
+//    public void setCategory(String category) {
+//        this.category = category;
+//    }
 }

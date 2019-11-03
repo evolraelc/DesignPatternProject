@@ -1,6 +1,8 @@
 package edu.tongji.designpattern.CommonClass.Order;
 
 
+import edu.tongji.designpattern.DevideByPattern.IteratorPattern.MyIterator;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,5 +25,5 @@ public abstract class AbstractAggregate<T> {
         return lst.isEmpty();
     }
 
-//    public abstract MyIterator<T> createIterator();
+    public abstract MyIterator<T> createIterator();
 }

@@ -1,18 +1,26 @@
 package edu.tongji.designpattern.CommonClass.Employee;
 
 
-import edu.tongji.designpattern.CommonClass.BroadcastType;
+import edu.tongji.designpattern.CommonClass.Other.BroadcastType;
+import edu.tongji.designpattern.DevideByPattern.BridgePattern.AirConditionerAPI;
 
 public class Manager extends Employee {
 
     private double temperature;
 
-//    public Manager(double temperature,AirConditionerAPI airConditionerAPI) {
-//        super(airConditionerAPI);
-//        this.temperature=temperature;
-//    }
+    /**
+     * @description: 构造函数，除去父类参数，还有温度参数temperature
+     * @Param:
+     * @return:
+     * @author: Cheng
+     **/
+    public Manager(double temperature, String employeeID, EmployeeTitle employeeTitle, AirConditionerAPI airConditionerAPI) {
+        super();
+        this.temperature=temperature;
+        this.employeeTitle = EmployeeTitle.MANAGER;
+    }
 
-    //解决顾客投诉的方法
+    //经理解决顾客投诉的方法，使用的是责任链模式，zhujitao
     @Override
     public void settleComplaint(){
         System.out.println("您好，我是本店的经理，请问您有什么问题吗?");
@@ -22,10 +30,18 @@ public class Manager extends Employee {
     }
 
 
+    /**
+     * @description: 用于实现桥接模式
+     *               重写的改变空调温度函数
+     *               支持Manager操作
+     * @Param:
+     * @return:
+     * @author: Cheng
+     **/
     @Override
-    public void changeTmp() {
-//        System.out.println("大堂经理修改空调温度——");
-//        airConditionerAPI.changeTem(temperature);
+    public void changeTemperature() {
+        System.out.println("大堂经理修改空调温度——");
+        airConditionerAPI.changeTem(temperature);
     }
 
     @Override
