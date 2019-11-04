@@ -1,8 +1,12 @@
 package edu.tongji.designpattern.CommonClass.Employee;
 
 
+import edu.tongji.designpattern.CommonClass.Customer.Customer;
 import edu.tongji.designpattern.CommonClass.Other.BroadcastType;
 import edu.tongji.designpattern.DevideByPattern.BridgePattern.AirConditionerAPI;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Manager extends Employee {
 
@@ -54,7 +58,7 @@ public class Manager extends Employee {
 
 
     @Override
-    public void getMessage(String msg) {
+    public void getMessage(String msg, Employee sender) {
 
     }
 
@@ -62,8 +66,26 @@ public class Manager extends Employee {
         if (this.myInterphoneChannel == null)
             return false;
         return this.myInterphoneChannel.notify(this,
-                    "new service",
+                    "NewService",
                     BroadcastType.ALL_EMPLOYEE);
+    }
+
+    /**
+     * @author  steve
+     * @description 选择有空的服务员进行调度服务
+     * @param customer  被服务对象
+     * @param employeelst   所有 Employee
+     */
+    public void scheduleWaiterToService(Customer customer, ArrayList<Employee> employeelst){
+        for (Employee e:employeelst) {
+            if (e.employeeTitle == EmployeeTitle.WAITER && e.order == null) {
+                customer.served((Waiter) e);
+                System.out.println("customer 正被"+e.employeeID+"服务");
+                return;
+            }
+            System.out.println("customer 没有被服务，当前所有 waiter 正忙");
+            return;
+        }
     }
 
     @Override
