@@ -130,13 +130,13 @@ public class Main {
 
 
         //后厨需要的参数和调度器设置
-//        order.setID(1);
-//        OrderDispatcher dispatcher = new OrderDispatcher();
-//        dispatcher.addOrder(order);
+        order.setID(1);
+        OrderDispatcher dispatcher = new OrderDispatcher();
+        dispatcher.addOrder(order);
 
         System.out.println("请您耐心等候，正在为您处理订单，如果有需要请联系服务员！");
-        System.out.println("如果想要修改空调温度，请输入 1 :");
-        System.out.println("如果想要进行投诉，请输入 0 :");
+        System.out.println("如果想要修改空调温度，请输入 0 :");
+        System.out.println("如果想要进行投诉，请输入 1 :");
         String ask = scan.nextLine().toString();
         //通过状态进行推出
         while (!ask.equals("")){
@@ -156,8 +156,8 @@ public class Main {
                 waiter1.changeTemperature();
             }
             System.out.println("请您耐心等候，正在为您处理订单，如果有需要请联系服务员！");
-            System.out.println("如果想要修改空调温度，请输入 1 :");
-            System.out.println("如果想要进行投诉，请输入 0 :");
+            System.out.println("如果想要修改空调温度，请输入 0 :");
+            System.out.println("如果想要进行投诉，请输入 1 :");
             ask = scan.nextLine().toString();
         }
 

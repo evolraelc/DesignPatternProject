@@ -7,14 +7,12 @@ package edu.tongji.designpattern.procedure;
  * @project MagicRestaurant
  */
 public class Blender extends Device {
-    public Blender(){
-        this.time = 6000L;
-        this.deviceName = "blender";
-    }
-
     @Override
-    public void print() {
-        System.out.println("classname:" + this.getClass().getName() + " method name:act" +
-                " action desc:使用blender进行了搅拌操作");
+    public void run() {
+        try {
+            Thread.sleep(6000L);
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

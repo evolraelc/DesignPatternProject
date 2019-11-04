@@ -7,20 +7,7 @@ package edu.tongji.designpattern.procedure;
  * @project MagicRestaurant
  */
 public abstract class Device implements Cloneable {
-    protected Long time;
-    protected String deviceName;
-
-    public void run(){
-        try {
-            Thread.sleep(this.time);
-            //print();
-            DeviceCache.getInstance().freeDevice(this.deviceName);
-        }catch (InterruptedException e){
-            e.printStackTrace();
-        }
-    }
-
-    public abstract void print();
+    public abstract void run();
     public Object clone(){
         Object clone = null;
         try {

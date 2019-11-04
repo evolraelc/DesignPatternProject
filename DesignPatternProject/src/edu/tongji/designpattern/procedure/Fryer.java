@@ -7,14 +7,12 @@ package edu.tongji.designpattern.procedure;
  * @project MagicRestaurant
  */
 public class Fryer extends Device {
-    public Fryer(){
-        this.time = 8000L;
-        this.deviceName = "fryer";
-    }
-
     @Override
-    public void print() {
-        System.out.println("classname:" + this.getClass().getName() + " method name:act" +
-                " action desc:使用fryer进行了油炸操作");
+    public void run() {
+        try {
+            Thread.sleep(8000L);
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

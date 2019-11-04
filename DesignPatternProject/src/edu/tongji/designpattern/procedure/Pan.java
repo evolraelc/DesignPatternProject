@@ -7,14 +7,12 @@ package edu.tongji.designpattern.procedure;
  * @project MagicRestaurant
  */
 public class Pan extends Device {
-    public Pan(){
-        this.time = 6000L;
-        this.deviceName = "pan";
-    }
-
     @Override
-    public void print() {
-        System.out.println("classname:" + this.getClass().getName() + " method name:act" +
-                " action desc:使用pan进行了煎操作");
+    public void run() {
+        try {
+            Thread.sleep(6000L);
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

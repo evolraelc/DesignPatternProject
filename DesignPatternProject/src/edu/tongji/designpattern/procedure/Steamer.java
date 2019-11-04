@@ -7,14 +7,12 @@ package edu.tongji.designpattern.procedure;
  * @project MagicRestaurant
  */
 public class Steamer extends Device {
-    public Steamer(){
-        this.time = 8000L;
-        this.deviceName = "steamer";
-    }
-
     @Override
-    public void print() {
-        System.out.println("classname:" + this.getClass().getName() + " method name:act" +
-                " action desc:使用steamer进行了蒸操作");
+    public void run() {
+        try {
+            Thread.sleep(8000L);
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

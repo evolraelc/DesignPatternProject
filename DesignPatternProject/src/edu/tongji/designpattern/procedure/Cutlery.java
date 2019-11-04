@@ -7,15 +7,13 @@ package edu.tongji.designpattern.procedure;
  * @project MagicRestaurant
  */
 public class Cutlery extends Device {
-    public Cutlery(){
-        this.time = 5000L;
-        this.deviceName = "cutlery";
-    }
-
     @Override
-    public void print() {
-        System.out.println("classname:" + this.getClass().getName() + " method name:act" +
-                " action desc:使用cutlery进行了切碎操作");
+    public void run() {
+        try {
+            Thread.sleep(5000L);
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 //    @Override
 //    void act() {

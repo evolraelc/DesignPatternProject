@@ -13,7 +13,7 @@ public class DeviceCache {
 
     private Hashtable<String, Device> deviceMap;
 
-    private Hashtable<String, Integer> deviceNumber;
+//    private Hashtable<String, Integer> deviceNumber;
 
     // private List<Observer> observers;
 
@@ -38,32 +38,32 @@ public class DeviceCache {
         Pan pan = new Pan();
         deviceMap.put("pan", pan);
 
-        this.deviceNumber = new Hashtable<String, Integer>();
-        deviceNumber.put("cutlery", 5);
-        deviceNumber.put("oven", 5);
-        deviceNumber.put("fryer", 5);
-        deviceNumber.put("juicer", 5);
-        deviceNumber.put("blender", 5);
-        deviceNumber.put("steamer", 5);
-        deviceNumber.put("grill", 5);
-        deviceNumber.put("pan", 5);
+//        this.deviceNumber = new Hashtable<String, Integer>();
+//        deviceNumber.put("cutlery", 5);
+//        deviceNumber.put("oven", 5);
+//        deviceNumber.put("fryer", 5);
+//        deviceNumber.put("juicer", 5);
+//        deviceNumber.put("blender", 5);
+//        deviceNumber.put("steamer", 5);
+//        deviceNumber.put("grill", 5);
+//        deviceNumber.put("pan", 5);
     }
 
     public Device getDevice(String deviceName){
         Device cachedDevice = deviceMap.get(deviceName);
-        Integer remainingDevice = deviceNumber.get(deviceName);
-        if(remainingDevice >= 1) {
-            deviceNumber.replace(deviceName, remainingDevice - 1);
-            return (Device) cachedDevice.clone();
-        }
-        else return null;
+        return (Device)cachedDevice.clone();
+//        Integer remainingDevice = deviceNumber.get(deviceName);
+//        if(remainingDevice >= 1) {
+//            deviceNumber.replace(deviceName, remainingDevice - 1);
+//            return (Device) cachedDevice.clone();
+//        }
+//        else return null;
     }
 
-    public void freeDevice(String deviceName){
-        Integer remainingDevice = deviceNumber.get(deviceName);
-        deviceNumber.replace(deviceName, remainingDevice + 1);
-
-    }
+//    public void freeDevice(String deviceName){
+//        Integer remainingDevice = deviceNumber.get(deviceName);
+//        deviceNumber.replace(deviceName, remainingDevice + 1);
+//    }
 
     public static DeviceCache getInstance(){
         return instance;

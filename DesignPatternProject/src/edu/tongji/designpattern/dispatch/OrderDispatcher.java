@@ -1,6 +1,7 @@
 package edu.tongji.designpattern.dispatch;
 
 import edu.tongji.designpattern.CommonClass.Order.Order;
+import edu.tongji.designpattern.DevideByPattern.StatePattern.OrderState;
 import edu.tongji.designpattern.meal.Meal;
 import edu.tongji.designpattern.meal.MealBuilder;
 
@@ -10,7 +11,7 @@ import java.util.Queue;
 /**
  * @author 感觉好想睡觉
  * @date 2019/11/2 15:54
- * @description
+ * @description 订单调度类
  * @project MagicRestaurant
  */
 public class OrderDispatcher implements Runnable{
@@ -28,6 +29,7 @@ public class OrderDispatcher implements Runnable{
             Order order = orderQueue.poll();
             MealBuilder mealBuilder = new MealBuilder(order);
             Meal meal = mealBuilder.prepareMeal();
+            order.setOrderState(1);
         } while(!orderQueue.isEmpty());
     }
 }

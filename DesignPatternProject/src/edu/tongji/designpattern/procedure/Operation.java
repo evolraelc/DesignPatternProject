@@ -60,6 +60,7 @@ public class Operation extends Visitor {
     @Override
     public void visit(Element element) {
         System.out.println("classname:" + this.getClass().getName() + " method:visit" +
-                " action desc:" + "从仓库中取了" + element.ingredients.size() + "份" +element.ingredients.get(0).getName() + "原料");
+                " action desc:" + "从仓库中取了" + element.ingredients.size() + "份" +
+                element.ingredients.get(0).getName() + "原料剩余" + element.ingredients.get(0).getNumber());
     }
 }
