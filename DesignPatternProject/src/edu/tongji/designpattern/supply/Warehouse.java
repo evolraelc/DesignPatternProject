@@ -53,6 +53,7 @@ public class Warehouse {
     }//观察者模式
 
     public void notifyAllObservers(){
+        this.isBuying = true;
         for (Watcher watcher : watchers) {
             watcher.update();
         }
