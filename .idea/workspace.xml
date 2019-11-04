@@ -2,294 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b56badb-2694-481c-99ce-111f5a5f55af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/DesignPattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Customer/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Customer/VIPType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Cashier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Cook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/EmployeeTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Waiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Items/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Items/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Order/AbstractAggregate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Order/OrderAggregate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Order/OrderType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Other/BroadcastType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Other/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/Coupon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/Discount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/DiscountAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/RealDiscount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BridgePattern/AirConditionerAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BridgePattern/FloorAirConditioner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BridgePattern/HangingAirConditioner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BuilderPattern/Combo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BuilderPattern/ComboBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BuilderPattern/ConcreteComboBuilderA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BuilderPattern/ConcreteComboBuilderB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BuilderPattern/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/ChainofResponsibilityPattern/Complaint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/AddDishCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/ConfirmOrderCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/CreateOrderCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/DropDishCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/OrderPadCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/ShowOrderCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/DecoratorPattern/CashierDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/DecoratorPattern/VIPCashierDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/BeerOpener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/CockOpener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/DarkPlumJuiceOpener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/DrinkOpener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/OpenerMaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/SpriteOpener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/CustomerCriteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/NonVIPCustomerCriterira.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/VIPCustomerCriteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/ItemIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/MyIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/OrderIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/MediatorPattern/InterPhoneChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/PrototypePattern/Memento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/PrototypePattern/OrderClone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/ProxyPattern/MenuSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/ProxyPattern/ProxyMenuSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/ProxyPattern/RealMenuSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/CheckOutState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/CustomerState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/EatState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/LeaveState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/OrderState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/WaitState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/AddDishStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/DropDishStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderConfirmStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderCreateStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderRecordingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/ShowOrderStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/common/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/common/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/common/FactoryProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/common/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/common/Watcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/dispatch/Chef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/dispatch/ChefFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/dispatch/DishRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/dispatch/OrderDispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Barbecue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Burger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Burrito.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Cake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Chips.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/DishFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/FriedChicken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Juice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Meal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/MealBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Pancake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Pizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Salad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Sashimi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Spaghetti.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Steamed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/meal/Sushi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/Blender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/Cutlery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/Device.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/DeviceCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/Fryer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/Grill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/Juicer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/Oven.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/Pan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/procedure/Steamer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/supply/Buyer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/supply/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/supply/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/supply/IngredientElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/supply/Procurement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/supply/Visitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/supply/Warehouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPatternProject/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPatternProject/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPatternProject/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPatternProject/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/DesignPatternProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/azureSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/DesignPattern.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Customer/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Customer/VIPType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Employee/Cashier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Employee/Cook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Employee/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Employee/EmployeeTitle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Employee/Gender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Employee/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Employee/Waiter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Items/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Items/Memento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Items/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Items/OrderClone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Order/AbstractAggregate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Order/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Order/OrderAggregate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Order/OrderType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Other/BroadcastType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Other/Dish.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/CommonClass/Other/Table.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/AdapterPattern/Coupon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponN.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/AdapterPattern/Discount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/AdapterPattern/DiscountAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/AdapterPattern/RealDiscount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/BridgePattern/AirConditionerAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/BridgePattern/FloorAirConditioner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/BridgePattern/HangingAirConditioner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/BuilderPattern/Combo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/BuilderPattern/ComboBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/BuilderPattern/ConcreteComboBuilderA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/BuilderPattern/ConcreteComboBuilderB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/BuilderPattern/Director.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/ChainofResponsibilityPattern/Complaint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/CommandPattern/AddDishCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/CommandPattern/ConfirmOrderCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/CommandPattern/CreateOrderCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/CommandPattern/DropDishCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/CommandPattern/OrderPadCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/DecoratorPattern/CashierDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/DecoratorPattern/VIPCashierDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/FacadePattern/BeerOpener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/FacadePattern/CockOpener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/FacadePattern/DarkPlumJuiceOpener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/FacadePattern/DrinkOpener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/FacadePattern/OpenerMaker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/FacadePattern/SpriteOpener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/FilterPattern/CustomerCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/FilterPattern/NonVIPCustomerCriterira.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/FilterPattern/VIPCustomerCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/IteratorPattern/DishIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/IteratorPattern/MyIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/IteratorPattern/OrderIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/MediatorPattern/InterPhoneChannel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/PrototypePattern/Memento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/PrototypePattern/OrderClone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/ProxyPattern/MenuSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/ProxyPattern/ProxyMenuSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/ProxyPattern/RealMenuSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StatePattern/CheckOutState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StatePattern/CustomerState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StatePattern/EatState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StatePattern/LeaveState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StatePattern/OrderState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StatePattern/WaitState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StrategyPattern/AddDishStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StrategyPattern/DropDishStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderConfirmStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderCreateStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderRecordingStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/Main$Debug$Eyisheng.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/Main$Debug.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPattern/edu/tongji/designpattern/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/out/production/DesignPatternProject/edu/tongji/designpattern/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Customer/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Customer/VIPType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Cashier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Cook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/EmployeeTitle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Gender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Employee/Waiter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Items/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Items/Memento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Items/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Items/OrderClone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Order/AbstractAggregate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Order/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Order/OrderAggregate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Order/OrderType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Other/BroadcastType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Other/Dish.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Other/Table.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/Coupon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponN.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/Discount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/DiscountAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/RealDiscount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BridgePattern/AirConditionerAPI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BridgePattern/FloorAirConditioner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BridgePattern/HangingAirConditioner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BuilderPattern/Combo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BuilderPattern/ComboBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BuilderPattern/ConcreteComboBuilderA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BuilderPattern/ConcreteComboBuilderB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/BuilderPattern/Director.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/ChainofResponsibilityPattern/Complaint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/AddDishCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/ConfirmOrderCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/CreateOrderCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/DropDishCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/OrderPadCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/DecoratorPattern/CashierDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/DecoratorPattern/VIPCashierDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/BeerOpener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/CockOpener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/DarkPlumJuiceOpener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/DrinkOpener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/OpenerMaker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/SpriteOpener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/CustomerCriteria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/NonVIPCustomerCriterira.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/VIPCustomerCriteria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/DishIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/MyIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/OrderIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/MediatorPattern/InterPhoneChannel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/PrototypePattern/Memento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/PrototypePattern/OrderClone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/ProxyPattern/MenuSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/ProxyPattern/ProxyMenuSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/ProxyPattern/RealMenuSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/CheckOutState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/CustomerState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/EatState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/LeaveState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/OrderState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StatePattern/WaitState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/AddDishStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/DropDishStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderConfirmStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderCreateStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderRecordingStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatternProject/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DesignPatternProjectPerson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DesignPatternProjectPerson.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -300,18 +15,83 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/DesignPatternProject" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-14" />
+    <option name="y" value="-14" />
+    <option name="width" value="982" />
+    <option name="height" value="1050" />
+  </component>
   <component name="ProjectId" id="1T6dU8zizw2aP0Ahw1OQY0Zojd1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DesignPatternProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatternProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatternProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatternProject" type="462c0819:PsiDirectoryNode" />
+              <item name="DesignPatternProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatternProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatternProject" type="462c0819:PsiDirectoryNode" />
+              <item name="DesignPatternProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatternProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatternProject" type="462c0819:PsiDirectoryNode" />
+              <item name="DesignPatternProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="designpattern" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/DesignPatternProject" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.14648438" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -324,6 +104,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.tongji.designpattern.Main" />
+      <module name="DesignPatternProjectPerson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.tongji.designpattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -338,8 +138,45 @@
       <workItem from="1572784496685" duration="322000" />
       <workItem from="1572785083785" duration="48000" />
       <workItem from="1572849091366" duration="12000" />
+      <workItem from="1572850754537" duration="60000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="60000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1488" height="803" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -350,11 +187,111 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
