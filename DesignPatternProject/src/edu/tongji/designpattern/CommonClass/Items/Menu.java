@@ -24,15 +24,23 @@ public class Menu {
 			menuList.add(dish);
 		}
 	}
+
 	public static Menu getInstance() {
 		return menu;
 	}
+
 	public void showMenu() {
 		for(int i = 0; i < this.foodName.length; i++){
-			System.out.println("菜名是" + menuList.get(i).getName() + ",价格是" + menuList.get(i).getPrice()+",编号是"+(i+1));
+			System.out.println("菜名：" + menuList.get(i).getName() + ",价格：" + menuList.get(i).getPrice()+",编号是"+(i+1));
 		}
 	}
+
 	public Item getItem(Integer index) {
-		return menuList.get(index);
+		try {
+			return menuList.get(index);
+		}catch (IndexOutOfBoundsException e){
+			System.out.println("ERROR: index out of bound of Menu");
+			return null;
+		}
 	}
 }

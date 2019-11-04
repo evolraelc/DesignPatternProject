@@ -3,16 +3,16 @@ package edu.tongji.designpattern.CommonClass.Customer;
 
 import edu.tongji.designpattern.CommonClass.Employee.Gender;
 import edu.tongji.designpattern.CommonClass.Employee.Waiter;
-import edu.tongji.designpattern.CommonClass.Other.Dish;
+import edu.tongji.designpattern.CommonClass.Items.Item;
 import edu.tongji.designpattern.DevideByPattern.CommandPattern.*;
 import edu.tongji.designpattern.DevideByPattern.StatePattern.CustomerState;
 import edu.tongji.designpattern.DevideByPattern.StatePattern.OrderState;
+import edu.tongji.designpattern.DevideByPattern.StrategyPattern.ShowOrderStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
-    ////<<<<
     private String customerName;
     private Gender customerGender;
     private VIPType viptype = VIPType.NONVIP;
@@ -20,7 +20,7 @@ public class Customer {
     private CustomerState customerState;
     private double time; //目前是传递一个时间参数，来控制顾客的状态变化
     private OrderPadCommand myCommand;
-    private Waiter servedWaiter;
+    private Waiter servedWaiter = null;
 
 
     public String getCustomerName() {
@@ -154,9 +154,9 @@ public class Customer {
 
 
 
-    public void served(Waiter wt){
-        this.servedWaiter = wt;
-    }
+    public void served(Waiter wt){ this.servedWaiter = wt; }
+
+    public Waiter getServingWaiter(){ return this.servedWaiter; }
 
     public void serviceEnd(){
         this.servedWaiter.clearOrder();
@@ -178,32 +178,40 @@ public class Customer {
         this.myCommand.execute();
     }
 
-   public void addDishDemand(Dish dish){
-        AddDishCommand cmd = new AddDishCommand(this.servedWaiter,dish);
+    public void addDishDemand(Item dish){
+        AddDishCommand cmd = new AddDishCommand(this.servedWaiter,this,dish);
         this.setMyCommand(cmd);
-        this.myCommand.execute();
+        this.executeCommand();
     }
 
-    public void dropDishDemand(Dish dish){
-        DropDishCommand cmd = new DropDishCommand(this.servedWaiter,dish);
+    public void dropDishDemand(Item dish){
+        DropDishCommand cmd = new DropDishCommand(this.servedWaiter,this,dish);
         this.setMyCommand(cmd);
-        this.myCommand.execute();
+        this.executeCommand();
     }
 
-    public void createOrderDemand(Dish dish){
-        CreateOrderCommand cmd = new CreateOrderCommand(this.servedWaiter);
+    public void createOrderDemand(){
+        CreateOrderCommand cmd = new CreateOrderCommand(this.servedWaiter,this);
         this.setMyCommand(cmd);
-        this.myCommand.execute();
+        this.executeCommand();
     }
 
-    public void confirmOrderDemand(Dish dish){
-        ConfirmOrderCommand cmd = new ConfirmOrderCommand(this.servedWaiter);
+    public void confirmOrderDemand(){
+        ConfirmOrderCommand cmd = new ConfirmOrderCommand(this.servedWaiter,this);
         this.setMyCommand(cmd);
-        this.myCommand.execute();
+        this.executeCommand();
     }
 
+    public void showOrderDemand(){
+        if (this.servedWaiter == null){
+            System.out.println("no serving waiter");
+            return;
+        }
+        ShowOrderCommand cmd = new ShowOrderCommand(this.servedWaiter,this);
+        this.setMyCommand(cmd);
+        this.executeCommand();
+    }
 
-    ////>>>>
 
     //下面函数是组合模式所需函数，用于顾客对象加入一个队列中，形成分层
     //树形结构，可以铜鼓VIP与否将顾客加入不同列表中

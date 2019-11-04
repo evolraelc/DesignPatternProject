@@ -11,20 +11,12 @@ import edu.tongji.designpattern.CommonClass.Order.Order;
 import edu.tongji.designpattern.DevideByPattern.AdapterPattern.RealDiscount;
 import edu.tongji.designpattern.DevideByPattern.BridgePattern.FloorAirConditioner;
 import edu.tongji.designpattern.DevideByPattern.BridgePattern.HangingAirConditioner;
-import edu.tongji.designpattern.DevideByPattern.BuilderPattern.*;
-import edu.tongji.designpattern.DevideByPattern.ChainofResponsibilityPattern.Complaint;
 import edu.tongji.designpattern.DevideByPattern.DecoratorPattern.VIPCashierDecorator;
-import edu.tongji.designpattern.DevideByPattern.PrototypePattern.Memento;
-import edu.tongji.designpattern.DevideByPattern.PrototypePattern.OrderClone;
-import edu.tongji.designpattern.DevideByPattern.ProxyPattern.MenuSource;
-import edu.tongji.designpattern.DevideByPattern.ProxyPattern.ProxyMenuSource;
+import edu.tongji.designpattern.DevideByPattern.MediatorPattern.InterPhoneChannel;
 import edu.tongji.designpattern.dispatch.OrderDispatcher;
 
 import javax.swing.plaf.synth.SynthEditorPaneUI;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 
 public class Main {
@@ -46,87 +38,167 @@ public class Main {
         EmployeeTitle cook=EmployeeTitle.COOK;
         EmployeeTitle cashier=EmployeeTitle.CASHIER;
 
+        /*
+            创建所有 Employee
+         */
+        List<Employee> allEmployeeList = new ArrayList<>(); // 保存所有 Employee
         Waiter waiter1 = new Waiter("002",waiter,new FloorAirConditioner());
+        Waiter waiter2 = new Waiter("000",waiter,new FloorAirConditioner());
         Manager manager1 = new Manager("001",manager,new HangingAirConditioner());
         Cashier cashier1 = new Cashier("003", cashier, new HangingAirConditioner(),"A");
         Cook cook1 =new Cook("004",cook,new HangingAirConditioner(),new Order());
+        allEmployeeList.add(waiter1);
+        allEmployeeList.add(waiter2);
+        allEmployeeList.add(manager1);
+        allEmployeeList.add(cashier1);
+        allEmployeeList.add(cook1);
 
-        //组合模式：生成两个CustomerList，即VIP顾客和非VIP顾客
-        Customer VIPCustomer = new Customer("",Gender.NONE,VIPType.VIP);
-        Customer NONVIPCustomer = new Customer("",Gender.NONE,VIPType.NONVIP);
+        /*
+            创建 Channel
+         */
+        InterPhoneChannel interPhoneChannel = InterPhoneChannel.getInstance(allEmployeeList);
 
         System.out.println("第一个顾客他来了，脚下生风，虎虎生威");
         Customer customer1=new Customer("张先生", Gender.MALE, VIPType.VIP);
         System.out.println("欢迎"+customer1.getCustomerName());
 
-        //提前生成一个订单
-        Order order = new Order();
-
         //对讲机通知服务员顾客到了
+        manager1.notifyWaitersToService();
+        manager1.scheduleWaiterToService(customer1,(ArrayList<Employee>) allEmployeeList);
 
-
-        //顾客点菜，显示菜单
-        System.out.println("菜单如下：（输入编号即可,每个编号中间以空格隔开，换行结束）");
-
-        //代理模式，加载资源文件
-        MenuSource source=new ProxyMenuSource("SourceFile");
-
-        //显示menu
+        /*
+            显示菜单
+         */
+        System.out.println("菜单如下，请您点餐：（输入编号即可,每个编号中间以空格隔开，换行结束）");
         Menu menu = Menu.getInstance();
         menu.showMenu();
 
-        //显示套餐的内容
-        System.out.println("是否选择套餐？（是选择1，否选择0）");
+        /*
+            顾客点菜
+         */
+        Order currentOrder = null;
         Scanner scan = new Scanner(System.in);
-        String comboOrNot = scan.nextLine().toString();
-        if(comboOrNot.equals("1")){
-            ComboBuilder comboBuilder1= new ConcreteComboBuilderA();
-            ComboBuilder comboBuilder2= new ConcreteComboBuilderB();
-            Director director1 =new Director(comboBuilder1);
-            Director director2 =new Director(comboBuilder2);
-            Combo comboA=director1.construct();
-            Combo comboB=director2.construct();
-            System.out.println("请选择套餐编号:");
-            String comboNum =scan.nextLine().toString();
-            if(comboNum.equals("1")){
-                comboBuilder1.buildItemList();
-                order.setItemList(comboBuilder1.getItemList());
-                order.setPrice(comboBuilder1.getPrice());
+        while (true){
+            System.out.println("======请输入命令======");
+            System.out.println(
+                            "1***创建订单\tcreate order\n" +
+                            "2***添加菜品\tadd dish\n" +
+                            "3***删除菜品\tdrop dish\n" +
+                            "4***确认订单\tconfirm order\n" +
+                            "5***查看菜单\tshow menu\n" +
+                            "6***查看订单\tshow order\n" +
+                            "====================="
+                            );
+
+            boolean flag = false;
+            String line = scan.nextLine();
+            System.out.println(line);
+//            Waiter servingWaiter = customer1.getServingWaiter();
+            if (line.equals("create order")){
+                customer1.createOrderDemand();
+            }
+            else if (line.equals("add dish")){
+                System.out.println("请输入菜名所对应的编号");
+                Integer idx = -1;
+                boolean normal = true;
+                while (true) {
+                    try {
+                        idx = scan.nextInt()-1; //// indexation bias
+                        break;
+                    } catch (Exception e) {
+                        System.out.println("ERROR: invalid input");
+                        normal = false;
+                        break;
+                    }finally {
+                        scan = new Scanner(System.in);
+                    }
+                }
+                if (normal) {
+                    Item newItem = menu.getItem(idx);
+                    if (newItem != null)
+                        customer1.addDishDemand(newItem);
+                }
+            }
+            else if (line.equals("drop dish")){
+                System.out.println("请输入菜名所对应的编号");
+                Integer idx = -1;
+                boolean normal = true;
+                while (true) {
+                    try {
+                        idx = scan.nextInt()-1;// indexation bias
+                        break;
+                    } catch (Exception e) {
+                        System.out.println("ERROR: invalid input");
+                        normal = false;
+                        break;
+                    }finally {
+                        scan = new Scanner(System.in);
+                    }
+                }
+                if (normal) {
+                    Item delItem = menu.getItem(idx);
+                    if (delItem != null)
+                        customer1.dropDishDemand(delItem);
+                }
+            }
+            else if (line.equals("confirm order")){
+                while (true) {
+                    try {
+                        System.out.println("confirm? y/[n]");
+                        String ch = scan.next();
+                        if (ch.equals("y")){
+                            customer1.confirmOrderDemand();
+                            flag = true;
+                            Waiter servingWaiter = customer1.getServingWaiter();
+                            currentOrder = servingWaiter.getCurrentOrder();
+                            servingWaiter.clearOrder();
+                            customer1.serviceEnd();
+                            break;
+                        }
+                        else if (ch.equals("n")){
+                            break;
+                        }
+                    }catch (Exception e){
+                        System.out.println("ERROR: invalid input");
+                    }finally {
+                        scan = new Scanner(System.in);
+                    }
+                }
+            }
+            else if (line.equals("show menu")){
+                menu.showMenu();
+            }
+            else if (line.equals("show order")){
+                customer1.showOrderDemand();
             }
             else{
-                comboBuilder2.buildItemList();
-                order.setItemList(comboBuilder2.getItemList());
-                order.setPrice(comboBuilder2.getPrice());
+                System.out.println("**********\n命令错误，请重新输入\n**********");
             }
-        }else {
-            //在这里通过输入菜的编号生成order
-
-
-
-//            String dishNum = scan.nextLine().toString();
-//            String dish[] = dishNum.split(" ");
-//            Integer d[] = new Integer[dish.length];
-//            for (Integer i = 0; i < d.length; i++) {
-//                d[i] = Integer.parseInt(dish[i]);
-//            }
-            //d[]里面存放所点菜的序列，下面要生成一个order并传给后厨
-
+            if (flag){
+                break;
+            }
         }
 
 
+        String dishNum = scan.nextLine().toString();
+        String dish[]= dishNum.split(" ");
+        Integer d[]= new Integer[dish.length];
+        for(Integer i=0;i<d.length;i++)
+        {
+            d[i]=Integer.parseInt(dish[i]);
+//            System.out.println(d[i]+ " ");
+        }
+        //d[]里面存放所点菜的序列，下面要生成一个order并传给后厨
+
+
+
         //传给后厨菜单order并设置订单状态
+        Order order = currentOrder;
+        order.setPrice(100);
         //观察者模式
         waiter1.setOrder(order);
         cook1.setOrder(order);
         order.setOrderState(0);
-
-        //使用备忘录来备份order
-        OrderClone orderClone = new OrderClone(order);
-        OrderClone orderClone1 = (OrderClone)orderClone.clone();
-        Memento memento = new Memento();
-        memento.addOrderClone(orderClone1);
-        //获取备份的order
-        //memento.getOrderClone(1);
 
 
         //后厨需要的参数和调度器设置
@@ -134,6 +206,7 @@ public class Main {
         OrderDispatcher dispatcher = new OrderDispatcher();
         dispatcher.addOrder(order);
 
+<<<<<<< HEAD
         System.out.println("请您耐心等候，正在为您处理订单，如果有需要请联系服务员！");
         System.out.println("如果想要修改空调温度，请输入 0 :");
         System.out.println("如果想要进行投诉，请输入 1 :");
@@ -160,8 +233,13 @@ public class Main {
             System.out.println("如果想要进行投诉，请输入 1 :");
             ask = scan.nextLine().toString();
         }
+=======
+>>>>>>> c798c77c8d5340cc324b4cc977dbabd2d47c13ae
 
 
+        //服务员设置空调温度
+//        waiter1.setTemperature(24.00);
+//        waiter1.changeTemperature();
 
 
         //外观模式：服务员检查订单是否有酒水，如果有则取酒水
@@ -189,7 +267,19 @@ public class Main {
         VIPCashierDecorator vipCashierDecorator = new VIPCashierDecorator(cashier1);
         vipCashierDecorator.settleAccount();
 
-        //根据顾客是否为VIP顾客来处理
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //test for StatePattern

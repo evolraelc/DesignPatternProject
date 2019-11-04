@@ -1,12 +1,13 @@
 package edu.tongji.designpattern.DevideByPattern.CommandPattern;
 
 
+import edu.tongji.designpattern.CommonClass.Customer.Customer;
 import edu.tongji.designpattern.CommonClass.Employee.Waiter;
-import edu.tongji.designpattern.CommonClass.Other.Dish;
+import edu.tongji.designpattern.CommonClass.Items.Item;
 
 public class DropDishCommand extends OrderPadCommand {
-    public DropDishCommand(Waiter rec, Dish dish){
-        super(rec);
+    public DropDishCommand(Waiter rec, Customer send, Item dish){
+        super(rec, send);
         this.dish = dish;
     }
     @Override

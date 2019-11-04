@@ -5,12 +5,10 @@ import edu.tongji.designpattern.CommonClass.Other.BroadcastType;
 import edu.tongji.designpattern.CommonClass.Customer.Customer;
 import edu.tongji.designpattern.CommonClass.Items.Item;
 import edu.tongji.designpattern.CommonClass.Order.Order;
-import edu.tongji.designpattern.CommonClass.Other.Dish;
 import edu.tongji.designpattern.DevideByPattern.BridgePattern.AirConditionerAPI;
 import edu.tongji.designpattern.DevideByPattern.FacadePattern.OpenerMaker;
 import edu.tongji.designpattern.DevideByPattern.StrategyPattern.*;
 
-////>>>>
 public class Waiter extends Employee {
 
     Customer customer;
@@ -29,6 +27,7 @@ public class Waiter extends Employee {
     public Waiter(){
         super();
     }
+
     /**
      * @description: 构造函数，除去父类参数，还有温度参数temperature
      * @Param:
@@ -69,7 +68,6 @@ public class Waiter extends Employee {
      **/
     public void getState(Customer customer){
         System.out.println("顾客现在的状态是：");
-        customer.getState();
     }
 
 
@@ -114,8 +112,18 @@ public class Waiter extends Employee {
     }
 
     @Override
-    public void getMessage(String msg) {
-        System.out.println(this.employeeID+" receive "+msg);
+    public void getMessage(String msg, Employee sender) {
+        if (msg == "NewService") { //// 处理新的服务
+            System.out.println(this.employeeID + " received " + msg);
+            String returnMsg;
+            if (this.currentOrder == null){ //// 如果没空
+                returnMsg = this.employeeID+"Busy";
+            }
+            else{
+                returnMsg = this.employeeID+"Free";
+            }
+            this.myInterphoneChannel.notify(this,returnMsg,BroadcastType.MANAGER_REPORT);//// 回复
+        }
     }
 
 
@@ -134,7 +142,7 @@ public class Waiter extends Employee {
      */
     public void getDrinkList(Order order){
         openerMaker=new OpenerMaker();
-        for (Item item : order.getItemList()) {
+        for (Item item : order.getDishList()) {
             if (item.getName() == "百威啤酒" || item.getName() == "酸梅汁"|| item.getName() == "可乐"|| item.getName() == "雪碧") {
                 if (item.getName() == "百威啤酒") {
                     openerMaker.openBeer();
@@ -153,6 +161,8 @@ public class Waiter extends Employee {
         this.order = null;
     }
 
+    public Order getCurrentOrder(){ return this.currentOrder; }
+
     public void createOrderForCustomer(){
         OrderCreateStrategy strategy = new OrderCreateStrategy();
         this.setStrategy(strategy);
@@ -163,20 +173,26 @@ public class Waiter extends Employee {
         OrderConfirmStrategy strategy = new OrderConfirmStrategy();
         this.setStrategy(strategy);
         this.currentOrder = this.strategy.execute(null,this.currentOrder);
+        //// send order...
     }
 
-    public void addDishForCustomer(Dish item){
+    public void addDishForCustomer(Item item){
         AddDishStrategy strategy = new AddDishStrategy();
         this.setStrategy(strategy);
         this.currentOrder = this.strategy.execute(item,this.currentOrder);
     }
 
-    public void dropDishForCustomer(Dish item){
+    public void dropDishForCustomer(Item item){
         DropDishStrategy strategy = new DropDishStrategy();
         this.setStrategy(strategy);
         this.currentOrder = this.strategy.execute(item,this.currentOrder);
     }
 
+    public void showOrderForCustomer(){
+        ShowOrderStrategy strategy = new ShowOrderStrategy();
+        this.setStrategy((OrderRecordingStrategy) strategy);
+        this.currentOrder = this.strategy.execute(null,this.currentOrder);
+    }
     private void setStrategy(OrderRecordingStrategy strategy) {
         this.strategy = strategy;
     }
