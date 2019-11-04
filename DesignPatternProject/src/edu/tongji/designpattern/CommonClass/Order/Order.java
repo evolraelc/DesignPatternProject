@@ -12,7 +12,8 @@ import java.util.Date;
 import java.util.List;
 
 public class Order extends AbstractAggregate<Dish> {
-    private String orderID;
+
+    private Integer ID;
     private Date date;
     private OrderType type = OrderType.UNDETERMINED;
     private List<Dish> dishes = new ArrayList<>();
@@ -21,8 +22,27 @@ public class Order extends AbstractAggregate<Dish> {
     private double price = 0.0;
     private Integer orderState;
 
+    public Order(){}
+
+    public Order(Integer ID, List<Item> itemList){
+        this.ID = ID;
+        this.itemList = itemList;
+    }
+
+
+
 
     //下面是get和set方法，zhujitao
+
+
+    public void setID(Integer ID) {
+        this.ID = ID;
+    }
+
+    public void setItemList(List<Item> itemList) {
+        this.itemList = itemList;
+    }
+
     public double getPrice() {
         return price;
     }
@@ -41,6 +61,13 @@ public class Order extends AbstractAggregate<Dish> {
         return itemList;
     }
 
+    public List<Item> getDishList() {
+        return itemList;
+    }
+
+    public Integer getID(){
+        return this.ID;
+    }
 
     public List<Employee> getEmployeeList() {
         return employeeList;
@@ -54,8 +81,8 @@ public class Order extends AbstractAggregate<Dish> {
     /**
      * @author  eyisheng
      */
-    public String getOrderID() {
-        return orderID;
+    public Integer getOrderID() {
+        return ID;
     }
 
     public Date getDate(){

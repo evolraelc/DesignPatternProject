@@ -23,6 +23,13 @@ public class Customer {
     private Waiter servedWaiter;
 
 
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
 
     /**
     * @description: 用于状态模式

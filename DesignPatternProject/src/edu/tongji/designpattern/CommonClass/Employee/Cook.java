@@ -15,9 +15,8 @@ public class Cook extends Employee {
      * @return:
      * @author: Cheng
      **/
-    public Cook(double temperature, String employeeID, EmployeeTitle employeeTitle, AirConditionerAPI airConditionerAPI, Order order) {
-        super();
-        this.temperature=temperature;
+    public Cook(String employeeID, EmployeeTitle employeeTitle, AirConditionerAPI airConditionerAPI, Order order) {
+        super(employeeID,employeeTitle,airConditionerAPI);
         this.employeeTitle=employeeTitle.COOK;
     }
 

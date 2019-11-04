@@ -23,9 +23,8 @@ public class Cashier extends Employee {
      * @return:
      * @author: Cheng
      **/
-    public Cashier(double temperature, String employeeID, EmployeeTitle employeeTitle, AirConditionerAPI airConditionerAPI, String couponType) {
-        super();
-        this.temperature=temperature;
+    public Cashier(String employeeID, EmployeeTitle employeeTitle, AirConditionerAPI airConditionerAPI, String couponType) {
+        super(employeeID,employeeTitle,airConditionerAPI);
         this.employeeTitle=employeeTitle.CASHIER;
         this.couponType = couponType;
         realDiscount = new RealDiscount(couponType);

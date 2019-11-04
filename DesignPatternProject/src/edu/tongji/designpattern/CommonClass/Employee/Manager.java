@@ -14,9 +14,8 @@ public class Manager extends Employee {
      * @return:
      * @author: Cheng
      **/
-    public Manager(double temperature, String employeeID, EmployeeTitle employeeTitle, AirConditionerAPI airConditionerAPI) {
-        super();
-        this.temperature=temperature;
+    public Manager( String employeeID, EmployeeTitle employeeTitle, AirConditionerAPI airConditionerAPI) {
+        super(employeeID,employeeTitle,airConditionerAPI);
         this.employeeTitle = EmployeeTitle.MANAGER;
     }
 
@@ -29,6 +28,10 @@ public class Manager extends Employee {
         System.out.println("非常抱歉，同时祝您就餐愉快！");
     }
 
+
+    public void setTemperature(double temperature) {
+        this.temperature = temperature;
+    }
 
     /**
      * @description: 用于实现桥接模式

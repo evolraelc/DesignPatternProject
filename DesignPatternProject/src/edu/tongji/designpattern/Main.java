@@ -2,8 +2,21 @@ package edu.tongji.designpattern;
 
 
 
+import edu.tongji.designpattern.CommonClass.Customer.Customer;
+import edu.tongji.designpattern.CommonClass.Customer.VIPType;
+import edu.tongji.designpattern.CommonClass.Employee.*;
+import edu.tongji.designpattern.CommonClass.Items.Item;
+import edu.tongji.designpattern.CommonClass.Items.Menu;
+import edu.tongji.designpattern.CommonClass.Order.Order;
+import edu.tongji.designpattern.DevideByPattern.BridgePattern.FloorAirConditioner;
+import edu.tongji.designpattern.DevideByPattern.BridgePattern.HangingAirConditioner;
+import edu.tongji.designpattern.dispatch.OrderDispatcher;
+
+import javax.swing.plaf.synth.SynthEditorPaneUI;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 
 
 public class Main {
@@ -18,7 +31,53 @@ public class Main {
     /*
         我定义了一些 Enum type，修改了你们的参数，但是输出时没有改
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException{
+
+
+        EmployeeTitle waiter=EmployeeTitle.WAITER;
+        EmployeeTitle manager=EmployeeTitle.MANAGER;
+        EmployeeTitle cook=EmployeeTitle.COOK;
+        EmployeeTitle cashier=EmployeeTitle.CASHIER;
+
+
+        Waiter waiter1 = new Waiter("002",waiter,new FloorAirConditioner());
+        Manager manager1 = new Manager("001",manager,new HangingAirConditioner());
+        Cashier cashier1 = new Cashier("003", cashier, new HangingAirConditioner(),"A");
+
+        System.out.println("第一个顾客他来了，脚下生风，虎虎生威");
+        Customer customer1=new Customer("张先生", Gender.MALE, VIPType.VIP);
+        System.out.println("欢迎"+customer1.getCustomerName());
+
+        //对讲机通知服务员顾客到了
+
+
+        //顾客点菜，显示菜单
+        System.out.println("菜单如下，请您点餐：（输入编号即可,每个编号中间以空格隔开，换行结束）");
+        Menu menu = Menu.getInstance();
+        menu.showMenu();
+
+        Scanner scan = new Scanner(System.in);
+
+        String dishNum = scan.nextLine().toString();
+        String dish[]= dishNum.split(" ");
+        Integer d[]= new Integer[dish.length];
+        for(Integer i=0;i<d.length;i++)
+        {
+            d[i]=Integer.parseInt(dish[i]);
+            System.out.println(d[i]+ " ");
+            //d[]里面存放所点菜的序列，下面要生成一个order
+        }
+
+
+
+
+
+
+
+
+        //服务员设置空调温度
+//        waiter1.setTemperature(24.00);
+//        waiter1.changeTemperature();
 
 
 //test for StatePattern
@@ -158,6 +217,39 @@ public class Main {
 //        items.add(new Item("百威啤酒",20.2));
 //        order.setItemList(items);
 //        ((Waiter) waiter2).getDrinkList(order);
+
+
+//
+//        int id = 1;
+//        List<Item> itemList = new ArrayList<Item>();
+//        itemList.add(new Item("汉堡", 22));
+//        itemList.add(new Item("薯条", 12));
+//        itemList.add(new Item("果汁", 18));
+//        OrderDispatcher dispatcher = new OrderDispatcher();
+//        Order order = new Order();
+//        order.setID(id);
+//        order.setItemList(itemList);
+//        dispatcher.addOrder(order);
+//        int n = 3;
+//        while(n > 0){
+//            n--;
+//            id++;
+//            Thread.sleep(10000L);
+//            int number = (new Random().nextInt(4)) + 1;
+//            List<Item> items = new ArrayList<Item>();
+//            while(number-- != 0){
+//                items.add(Menu.getInstance().getItem(new Random().nextInt(18)));
+//            }
+//            StringBuilder builder = new StringBuilder();
+//            for (Item item : items) {
+//                builder.append(item.getName()).append(" ");
+//            }
+//            System.out.println(id + " " + builder.toString());
+//            dispatcher.addOrder(new Order(id, items));
+//        }
+//        while(true);
+
+
 
     }
 

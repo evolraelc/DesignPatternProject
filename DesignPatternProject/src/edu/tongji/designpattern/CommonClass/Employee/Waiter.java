@@ -35,10 +35,14 @@ public class Waiter extends Employee {
      * @return:
      * @author: Cheng
      **/
-    public Waiter(double temperature, String employeeID, EmployeeTitle employeeTitle,AirConditionerAPI airConditionerAPI) {
-        super();
-        this.temperature= temperature;
+    public Waiter(String employeeID, EmployeeTitle employeeTitle,AirConditionerAPI airConditionerAPI) {
+        super(employeeID,employeeTitle,airConditionerAPI);
         this.employeeTitle = EmployeeTitle.WAITER;
+    }
+
+
+    public void setTemperature(double temperature) {
+        this.temperature = temperature;
     }
 
     /**
@@ -90,6 +94,9 @@ public class Waiter extends Employee {
         System.out.println("非常抱歉，同时祝您就餐愉快！");
     }
 
+    public void  print(){
+        System.out.println(temperature);
+    }
 
     /**
      * @author ruanby
