@@ -32,14 +32,6 @@ public class OrderIterator implements MyIterator<Order> {
         return null;
     }
 
-    @Override
-    public Order getCurrent() {
-        if (lst.isEmpty() || (position>=lst.size()) || (position<0) ){
-            return null;
-        }
-        else
-            return lst.get(position);
-    }
 
     @Override
     public void setPosition(int i) {
@@ -51,6 +43,6 @@ public class OrderIterator implements MyIterator<Order> {
         }
     }
 
-    public OrderAggregate getAggregate(){return this.agg;}
+//    public OrderAggregate getAggregate(){return this.agg;}
 
 }

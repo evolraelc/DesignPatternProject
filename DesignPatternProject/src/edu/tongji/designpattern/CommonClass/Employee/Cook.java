@@ -82,7 +82,7 @@ public class Cook extends Employee {
     }
 
     @Override
-    public void getMessage(String msg) {
+    public void getMessage(String msg, Employee sender) {
 
     }
 

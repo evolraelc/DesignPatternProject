@@ -3,44 +3,46 @@ package edu.tongji.designpattern.CommonClass.Order;
 
 import edu.tongji.designpattern.CommonClass.Employee.Employee;
 import edu.tongji.designpattern.CommonClass.Items.Item;
-import edu.tongji.designpattern.CommonClass.Other.Dish;
-import edu.tongji.designpattern.DevideByPattern.IteratorPattern.DishIterator;
+import edu.tongji.designpattern.DevideByPattern.IteratorPattern.ItemIterator;
 import edu.tongji.designpattern.DevideByPattern.IteratorPattern.MyIterator;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Order extends AbstractAggregate<Dish> {
+public class Order extends AbstractAggregate<Item> {
 
     private Integer ID;
-    private Date date;
+    private String date;
     private OrderType type = OrderType.UNDETERMINED;
-    private List<Dish> dishes = new ArrayList<>();
     private List<Item> itemList = new ArrayList<Item>();
     private List<Employee> employeeList = new ArrayList<Employee>();
     private double price = 0.0;
-    private Integer orderState;
+    private Integer orderState; // ?steve
 
     public Order(){}
 
     public Order(Integer ID, List<Item> itemList){
         this.ID = ID;
-        this.itemList = itemList;
+        if (itemList != null)
+            this.itemList = itemList;
+        orderState = 0;
+        SimpleDateFormat sdf = new SimpleDateFormat();
+        sdf.applyPattern("yyyy-MM-dd HH:mm:ss a");
+        Date date = new Date();
+        this.date = sdf.format(date);
     }
 
 
-
-
     //下面是get和set方法，zhujitao
-
-
     public void setID(Integer ID) {
         this.ID = ID;
     }
 
     public void setItemList(List<Item> itemList) {
-        this.itemList = itemList;
+        if (itemList != null)
+            this.itemList = itemList;
     }
 
     public double getPrice() {
@@ -49,16 +51,6 @@ public class Order extends AbstractAggregate<Dish> {
 
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    /**
-     * @author ruanby
-     * @date 11/2
-     * @return List<Item>
-     * @function 返回当前订单中的菜品和饮品list
-     */
-    public List<Item> getItemList() {
-        return itemList;
     }
 
     public List<Item> getDishList() {
@@ -85,7 +77,7 @@ public class Order extends AbstractAggregate<Dish> {
         return ID;
     }
 
-    public Date getDate(){
+    public String getDate(){
         return date;
     }
 
@@ -152,27 +144,31 @@ public class Order extends AbstractAggregate<Dish> {
     /*
         add new dish to the dish array
      */
-    public void addDish(Dish dsh){
-        dishes.add(dsh);
+    public void addDish(Item dsh){
+        this.itemList.add(dsh);
     }
 
     /*
         remove dish by dishID
      */
-    public boolean removeDish(String dishID){
-        for (Dish dsh:dishes){
-            if (dishID == dsh.getDishID()){
-                return dishes.remove(dsh);
+    public boolean removeDish(String dishName){
+        for (Item dsh: this.itemList){
+            if (dishName == dsh.getName()){
+                return this.itemList.remove(dsh);
             }
         }
         return false;
     }
 
-    public List<Dish> getDishes(){return this.dishes;}
-
+//    public void showDishes(){
+//        MyIterator<Item> iter = this.createIterator();
+//        while(iter.hasNext()){
+//            Item dish = iter.getNext();
+//        }
+//    }
 
     @Override
-    public MyIterator<Dish> createIterator() {
-        return new DishIterator(this,dishes);
+    public MyIterator<Item> createIterator() {
+        return new ItemIterator(this,this.itemList);
     }
 }

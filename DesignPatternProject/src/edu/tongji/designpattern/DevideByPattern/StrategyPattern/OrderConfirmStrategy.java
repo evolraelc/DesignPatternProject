@@ -1,17 +1,17 @@
 package edu.tongji.designpattern.DevideByPattern.StrategyPattern;
 
 
+import edu.tongji.designpattern.CommonClass.Items.Item;
 import edu.tongji.designpattern.CommonClass.Order.Order;
-import edu.tongji.designpattern.CommonClass.Other.Dish;
-import edu.tongji.designpattern.DevideByPattern.IteratorPattern.DishIterator;
+import edu.tongji.designpattern.DevideByPattern.IteratorPattern.ItemIterator;
 
 public class OrderConfirmStrategy implements OrderRecordingStrategy {
     @Override
-    public Order execute(Dish dish, Order order) {
-        DishIterator iter = (DishIterator) order.createIterator();
+    public Order execute(Item dish, Order order) {
+        ItemIterator iter = (ItemIterator) order.createIterator();
         while (iter.hasNext()){
-            Dish item = iter.getNext();
-            System.out.println("confirm dish "+item.getDishID());
+            Item item = iter.getNext();
+            System.out.println("confirm dish "+item.getName());
         }
         order.setTypeToDetermined();
         return order;

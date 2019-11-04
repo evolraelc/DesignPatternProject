@@ -1,19 +1,16 @@
 package edu.tongji.designpattern.DevideByPattern.IteratorPattern;
 
-
-
+import edu.tongji.designpattern.CommonClass.Items.Item;
 import edu.tongji.designpattern.CommonClass.Order.Order;
-import edu.tongji.designpattern.CommonClass.Other.Dish;
-
 import java.util.List;
 
-public class DishIterator implements MyIterator<Dish> {
+public class ItemIterator implements MyIterator<Item> {
 
     private Order order = null;
-    private List<Dish> lst = null;
+    private List<Item> lst = null;
     private int position = 0;
 
-    public DishIterator(Order order, List<Dish> dishes){
+    public ItemIterator(Order order, List<Item> dishes){
         this.order = order;
         this.lst = dishes;
     }
@@ -24,7 +21,7 @@ public class DishIterator implements MyIterator<Dish> {
     }
 
     @Override
-    public Dish getNext() {
+    public Item getNext() {
         if (position < lst.size()){
             return lst.get(position++);
         }
@@ -44,12 +41,12 @@ public class DishIterator implements MyIterator<Dish> {
 
     public Order getOrder(){return this.order;}
 
-    @Override
-    public Dish getCurrent() {
-        if (lst.isEmpty() || (position>=lst.size()) || (position<0) ){
-            return null;
-        }
-        else
-            return lst.get(position);
-    }
+//    @Override
+//    public Item getCurrent() {
+//        if (lst.isEmpty() || (position>=lst.size()) || (position<0) ){
+//            return null;
+//        }
+//        else
+//            return lst.get(position);
+//    }
 }
