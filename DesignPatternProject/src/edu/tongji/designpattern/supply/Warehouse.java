@@ -15,6 +15,8 @@ import java.util.Map;
  **/
 
 public class Warehouse {
+    private boolean isBuying = false;
+
     private static Warehouse instance =new Warehouse();
 
     private Warehouse(){
@@ -33,9 +35,8 @@ public class Warehouse {
         if (cachedIngredient.getNumber() - ingredientNumber < 0){
             return null;
         }
-        System.out.println("将消耗"+cachedIngredient.getName()+ingredientNumber+"份,当前库存："+(cachedIngredient.getNumber() - ingredientNumber)+"份");
         cachedIngredient.setNumber(cachedIngredient.getNumber() - ingredientNumber);
-        notifyAllObservers();
+        if(cachedIngredient.getNumber() < 10 && !isBuying) notifyAllObservers();
         for (int i = 0; i < ingredientNumber; i++) {
             ingredients.add((Ingredient) cachedIngredient.clone());
         }
@@ -52,9 +53,14 @@ public class Warehouse {
     }//观察者模式
 
     public void notifyAllObservers(){
+        this.isBuying = true;
         for (Watcher watcher : watchers) {
             watcher.update();
         }
+    }
+
+    public void finished() {
+        this.isBuying = false;
     }
 
     public void show(){

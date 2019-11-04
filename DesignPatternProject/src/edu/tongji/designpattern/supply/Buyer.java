@@ -30,11 +30,9 @@ public class Buyer implements Runnable {
                 }
                 System.out.println(entry.getValue().getName()+"补货完毕,库存:"+(entry.getValue().getNumber()+90));
                 entry.getValue().setNumber(entry.getValue().getNumber()+90);
-
             }
 
         }
-
-        procurement.isBusy=false;
+        warehouse.finished();
     }
 }

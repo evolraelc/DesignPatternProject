@@ -49,9 +49,9 @@ public class Chef implements Runnable{
 		for(Operation operation : operationList){
 			operation.execute();
 		}
-		this.isBusy = false;
+		System.out.println("classname:" + this.getClass().getName() + " method name:run action desc:"
+				+ this.name + "做好了订单" + meal.getID() + "号的" + dish.getName());
 		meal.addDish(dish);
-        System.out.println("classname:" + this.getClass().getName() + " method name:run action desc:"
-                + this.name + "做好了订单" + meal.getID() + "号的" + dish.getName());
+		this.isBusy = false;
 	}
 }

@@ -7,23 +7,12 @@ package edu.tongji.designpattern.procedure;
  * @project MagicRestaurant
  */
 public class Oven extends Device {
-    public Oven(){
-        this.time = 5000L;
-        this.deviceName = "oven";
-    }
-
     @Override
-    public void print() {
-        System.out.println("classname:" + this.getClass().getName() + " method name:act" +
-                " action desc:使用oven进行了烘焙操作");
+    public void run() {
+        try {
+            Thread.sleep(5000L);
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
-//    @Override
-//    void act() {
-//        System.out.println("classname:procedure.Bake method name:act");
-//        try {
-//            Thread.sleep(this.time);
-//        }catch (InterruptedException e){
-//            e.printStackTrace();
-//        }
-//    }
 }

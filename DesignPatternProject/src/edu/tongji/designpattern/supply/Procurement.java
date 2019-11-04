@@ -11,15 +11,9 @@ import edu.tongji.designpattern.common.Watcher;
  **/
 
 public class Procurement extends Watcher {
-    public Boolean isBusy=false;
     @Override
     public void update() {
-        //System.out.println( this.getClass().getName()+":"+" update：使用观察者模式，在仓库更新后通知Procurement进行更新");
-        while (isBusy);
-        isBusy=true;
         new Thread(new Buyer(Warehouse.getInstance(),this)).start();
-
-
     }
 
 

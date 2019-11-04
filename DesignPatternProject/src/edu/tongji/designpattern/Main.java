@@ -258,7 +258,6 @@ public class Main {
         }
 
 
-
         //后厨需要的参数和调度器设置
         order.setID(1);
         OrderDispatcher dispatcher = new OrderDispatcher();

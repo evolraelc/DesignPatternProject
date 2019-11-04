@@ -7,23 +7,12 @@ package edu.tongji.designpattern.procedure;
  * @project MagicRestaurant
  */
 public class Grill extends Device {
-    public Grill(){
-        this.time = 7000L;
-        this.deviceName = "grill";
-    }
-
     @Override
-    public void print() {
-        System.out.println("classname:" + this.getClass().getName() + " method name:act" +
-                " action desc:使用grill进行了烧烤操作");
+    public void run() {
+        try {
+            Thread.sleep(7000L);
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
-//    @Override
-//    void act() {
-//        System.out.println("classname:barbecue method name:act");
-//        try {
-//            Thread.sleep(this.time);
-//        }catch (InterruptedException e){
-//            e.printStackTrace();
-//        }
-//    }
 }
