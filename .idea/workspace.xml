@@ -19,7 +19,6 @@
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Order/OrderAggregate.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Order/OrderType.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Other/BroadcastType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Other/Dish.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/CommonClass/Other/Table.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/Coupon.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/AdapterPattern/CouponA.java" afterDir="false" />
@@ -43,6 +42,7 @@
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/CreateOrderCommand.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/DropDishCommand.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/OrderPadCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/ShowOrderCommand.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/DecoratorPattern/CashierDecorator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/DecoratorPattern/VIPCashierDecorator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FacadePattern/BeerOpener.java" afterDir="false" />
@@ -54,7 +54,7 @@
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/CustomerCriteria.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/NonVIPCustomerCriterira.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/VIPCustomerCriteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/DishIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/ItemIterator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/MyIterator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/OrderIterator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/MediatorPattern/InterPhoneChannel.java" afterDir="false" />
@@ -74,6 +74,7 @@
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderConfirmStrategy.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderCreateStrategy.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderRecordingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/ShowOrderStrategy.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/common/AbstractFactory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DesignPatternProject/src/edu/tongji/designpattern/common/Container.java" afterDir="false" />
@@ -336,6 +337,7 @@
       <updated>1572784491325</updated>
       <workItem from="1572784496685" duration="322000" />
       <workItem from="1572785083785" duration="48000" />
+      <workItem from="1572849091366" duration="12000" />
     </task>
     <servers />
   </component>
