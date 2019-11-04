@@ -31,11 +31,11 @@ public class VIPCashierDecorator extends CashierDecorator {
     public boolean VIPApplication(){
         boolean flag = false;
         //在下面询问顾客是否办理VIP，然后执行对应的操作
-        System.out.println("您现在还不是VIP用户，需要为您办理VIP专属卡吗？输入Y或者N");
+        System.out.println("您现在还不是VIP用户，需要为您办理VIP专属卡吗？");
         String answer = "";
         Scanner input =new Scanner(System.in);
         answer = input.next();
-        if(answer.equals("Y")){
+        if(answer.equals("Yes")){
             System.out.println("感谢您的信任，您现在已经是本店的VIP贵宾了，以后请多多支持！");
         }else {
             System.out.println("期待您对本店的进一步支持！");

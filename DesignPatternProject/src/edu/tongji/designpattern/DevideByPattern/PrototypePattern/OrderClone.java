@@ -22,7 +22,7 @@ public class OrderClone implements Cloneable{
 
     //构造函数，传入的参数是Order，目的是将Order里面需要记录的数据存入OrderClone中
     public OrderClone(Order order){
-        this.itemList = order.getItemList();
+        this.itemList = order.getDishList();
         this.price = order.getPrice();
     }
 

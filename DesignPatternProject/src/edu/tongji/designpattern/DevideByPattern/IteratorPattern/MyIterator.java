@@ -3,6 +3,6 @@ package edu.tongji.designpattern.DevideByPattern.IteratorPattern;
 public interface MyIterator<T> {
     boolean hasNext();
     T getNext();
-    T getCurrent();
+//    T getCurrent();
     void setPosition(int i);
 }

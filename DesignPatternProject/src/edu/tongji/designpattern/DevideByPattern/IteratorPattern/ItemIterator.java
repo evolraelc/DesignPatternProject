@@ -1,21 +1,18 @@
 package edu.tongji.designpattern.DevideByPattern.IteratorPattern;
 
-
-
+import edu.tongji.designpattern.CommonClass.Items.Item;
 import edu.tongji.designpattern.CommonClass.Order.Order;
-import edu.tongji.designpattern.CommonClass.Order.OrderAggregate;
-
 import java.util.List;
 
-public class OrderIterator implements MyIterator<Order> {
+public class ItemIterator implements MyIterator<Item> {
 
-    private OrderAggregate agg = null;
-    private List<Order> lst = null;
+    private Order order = null;
+    private List<Item> lst = null;
     private int position = 0;
 
-    public OrderIterator(OrderAggregate agg, List<Order> lst){
-        this.agg = agg;
-        this.lst = lst;
+    public ItemIterator(Order order, List<Item> dishes){
+        this.order = order;
+        this.lst = dishes;
     }
 
     @Override
@@ -24,14 +21,13 @@ public class OrderIterator implements MyIterator<Order> {
     }
 
     @Override
-    public Order getNext() {
+    public Item getNext() {
         if (position < lst.size()){
             return lst.get(position++);
         }
         System.out.println("out of bound");
         return null;
     }
-
 
     @Override
     public void setPosition(int i) {
@@ -43,6 +39,14 @@ public class OrderIterator implements MyIterator<Order> {
         }
     }
 
-//    public OrderAggregate getAggregate(){return this.agg;}
+    public Order getOrder(){return this.order;}
 
+//    @Override
+//    public Item getCurrent() {
+//        if (lst.isEmpty() || (position>=lst.size()) || (position<0) ){
+//            return null;
+//        }
+//        else
+//            return lst.get(position);
+//    }
 }

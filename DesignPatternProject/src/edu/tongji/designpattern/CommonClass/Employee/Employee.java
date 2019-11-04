@@ -68,7 +68,7 @@ public abstract class Employee {
     public abstract void settleComplaint();
 
     //// process the massage received
-    public void getMessage(String msg){
+    public void getMessage(String msg, Employee sender){
         System.out.println(this.employeeID+" receive message "+msg);
     }
 

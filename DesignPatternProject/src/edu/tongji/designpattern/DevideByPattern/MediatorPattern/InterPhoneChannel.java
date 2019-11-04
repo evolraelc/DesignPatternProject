@@ -52,7 +52,7 @@ public class InterPhoneChannel {
             for (Employee e:this.onlineEmployees){
                 if (e.getTitle() == EmployeeTitle.WAITER){
                     /// pass message
-                    e.getMessage(message);
+                    e.getMessage(message, sender);
                 }
             }
         }
@@ -60,7 +60,7 @@ public class InterPhoneChannel {
             for (Employee e:this.onlineEmployees){
                 if (e.getTitle() == EmployeeTitle.MANAGER){
                     /// pass message
-                    e.getMessage(message);
+                    e.getMessage(message, sender);
                     return true;
                 }
             }
@@ -69,7 +69,7 @@ public class InterPhoneChannel {
         else if (bctype == BroadcastType.ALL){
             for (Employee e:this.onlineEmployees){
                 /// pass message
-                e.getMessage(message);
+                e.getMessage(message, sender);
             }
         }
         return true;
