@@ -69,6 +69,7 @@ public class Waiter extends Employee {
      **/
     public void getState(Customer customer){
         System.out.println("顾客现在的状态是：");
+        customer.getState();
     }
 
 

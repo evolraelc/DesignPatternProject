@@ -17,6 +17,7 @@ public class Cook extends Employee {
      **/
     public Cook(String employeeID, EmployeeTitle employeeTitle, AirConditionerAPI airConditionerAPI, Order order) {
         super(employeeID,employeeTitle,airConditionerAPI);
+        this.order=order;
         this.employeeTitle=employeeTitle.COOK;
     }
 

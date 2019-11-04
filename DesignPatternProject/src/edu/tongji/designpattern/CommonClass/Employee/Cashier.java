@@ -30,6 +30,10 @@ public class Cashier extends Employee {
         realDiscount = new RealDiscount(couponType);
     }
 
+    public void setCouponType(String couponType) {
+        this.couponType = couponType;
+    }
+
     //收银员处理订单的函数,使用了适配器模式，zhujitao
     public void settleAccount(){
         //这里执行结账操作，结账成功返回true
